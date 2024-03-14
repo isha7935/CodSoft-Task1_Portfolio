@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@font-face {
+    font-family: 'Azonix';
+    src: url(Fonts/Qualy\ Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B82A2E;
+}
+
+::selection {
+    background-color: #000;
+}
+
+body {
+    cursor: url(/Image/cursor.png), auto;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: url(/Image/bg1\ -\ Copy.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 88px;
+    background-color: #000;
+    backdrop-filter: blur(40px);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: 'Azonix';
+}
+
+nav .navList {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+nav .navList a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: unset;
+    display: inline-block;
+    position: relative;
+    padding: 2px 0px;
+}
+
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.container .banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.container .layer {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(58, 58, 58, 0) 43%, rgba(0, 0, 0, 0.24413515406162467) 63%, rgba(0, 0, 0, 1) 98%);
+}
+
+.container .banner h1 {
+    font-size: 98px;
+    line-height: 95px;
+    font-weight: 200;
+    font-family: 'Azonix';
+    color: #000;
+}
+
+.container .banner h1 span {
+    font-weight: 600;
+    font-family: 'Azonix';
+    color: black;
+}
+
+.container .banner h4 {
+    font-size: 32px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 58px;
+    background-color:black;
+}
+
+.container .banner h4:nth-child(3) {
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 8px;
+    background-color: #000;
+    backdrop-filter: blur(40px);
+    margin-top: 20px;
+}
+
+.container .banner .links {
+    margin-top: 22px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .banner .social i {
+    font-size: 28px;
+    font-weight: 200;
+    margin: 0px 14px;
+    transition: all ease .3s;
+}
+
+.container .banner .social i:hover {
+    color: #B82A2E;
+}
+
+.container .banner .btn button {
+    padding: 8px 22px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+
+.container .banner .btn button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #fff;
+    transition: .3s;
+}
+
+.container .banner .btn button:hover {
+    border: 1px solid #B82A2E;
+
+}
+
+.container .banner .btn button:hover a {
+    color: #B82A2E;
+    font-weight: 400;
+}
+
+
+/*         About        */
+
+.container .about {
+    height: 100vh;
+    background: #000;
+    padding: 50px 88px;
+
+}
+
+.container .about h1,
+.skills h1,
+.contact h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.container .about h1 span,
+.container .skills h2 span,
+.container .contact h1 span {
+    font-weight: 600;
+    color: #B82A2E;
+    font-family: 'Azonix';
+}
+
+
+.about .about-me {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    color: #fff;
+    position: relative;
+}
+
+.container .about .about-me .left {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.container .about .about-me .left h4 {
+    font-size: 18px;
+    font-weight: 200;
+    width: 100%;
+
+    letter-spacing: .7px;
+}
+
+.container .about .about-me .left h4 span {
+    font-weight: 500;
+    font-style: italic;
+    color: #B82A2E;
+}
+
+.container .about .about-me .left .edu {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container .about .about-me .left .edu .info {
+    margin-top: 18px;
+    text-align: left;
+}
+
+.container .about .about-me .left .edu h2,
+.container .skills h2 {
+    font-size: 28px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+
+.container .about .about-me .left .edu h5 {
+    font-weight: 200;
+
+}
+
+.container .about .about-me .right {
+    width: 27%;
+    padding: 10px;
+    display: flex;
+
+    border-radius: 5px;
+    background-color: #0f0f0f;
+}
+
+.container .about .about-me .right img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/*-----Skills-------*/
+.container .skills {
+    height: 100vh;
+    background: url(/Image/bg1\ -\ Copy.jpeg) no-repeat center;
+    background-size: cover;
+
+
+}
+
+.skills .about-me {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    color: #000;
+    position: relative;
+}
+
+.skills .layer {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(5, 5, 5, 0) 32%, rgba(5, 5, 5, 0) 76%, rgba(0, 0, 0, 1) 99%);
+    padding: 50px 88px;
+}
+
+.skills .about-me .box {
+    width: 40%;
+    text-align: center;
+}
+
+.skills .about-me .box .elem {
+    text-align: left;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .about-me .box .elem h3 {
+    font-weight: 200;
+}
+
+.skills .about-me .box .elem .progress {
+    width: 90%;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.212);
+    backdrop-filter: blur(40px);
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+.skills .about-me .box .elem .progress .progress-bar {
+    position: absolute;
+    height: 3px;
+    background: #B82A2E;
+}
+
+li::marker {
+    color: rgba(0, 0, 0, 0.567);
+
+}
+
+
+.skills .about-me .box .elem ul li {
+    margin-top: 24px;
+    list-style-image: url(/Image/list-type.png);
+}
+
+/*---Contact--*/
+.contact {
+    min-height: 40vh;
+    background: #000;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.contact .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 14px;
+}
+
+.contact .box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.contact h3 {
+    font-weight: 200;
+    color: #fff;
+}
+
+.contact .elements {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    gap: 15px;
+}
+
+
+
+.contact .elements .elem-img img {
+    width: 36px;
+}
+
+.contact .copyright {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #B82A2E;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .copyright h4 {
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
